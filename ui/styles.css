@@ -1,0 +1,216 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+}
+
+#app {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+header {
+    background-color: #1877f2;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #dddfe2;
+}
+
+nav button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 15px;
+    transition: background-color 0.3s, color 0.3s;
+    border-radius: 4px;
+}
+
+nav button:hover {
+    background-color: #f0f2f5;
+}
+
+nav button.active {
+    background-color: #1877f2;
+    color: white;
+}
+
+main {
+    padding: 20px;
+}
+
+.app-card {
+    border: 1px solid #dddfe2;
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: box-shadow 0.3s;
+}
+
+.app-card:hover {
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.app-logo {
+    width: 60px;
+    height: 60px;
+    background-color: #1877f2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    color: white;
+    border-radius: 8px;
+}
+
+.app-info {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+.app-info h3 {
+    margin: 0 0 5px 0;
+    font-size: 18px;
+}
+
+.app-info p {
+    margin: 0;
+    color: #65676b;
+    font-size: 14px;
+}
+
+.app-action {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.download-button, .downloaded-button {
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.download-button {
+    background-color: #1877f2;
+    color: white;
+}
+
+.download-button:hover {
+    background-color: #166fe5;
+}
+
+.downloaded-button {
+    background-color: #e4e6eb;
+    color: #65676b;
+    cursor: default;
+}
+
+.points-label {
+    font-size: 12px;
+    color: #65676b;
+    margin-top: 5px;
+}
+
+.upload-area {
+    border: 2px dashed #dddfe2;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: center;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.upload-area:hover {
+    background-color: #f0f2f5;
+}
+
+#addAppForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#addAppForm input, #addAppForm select {
+    padding: 10px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+#addAppForm button {
+    background-color: #1877f2;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#addAppForm button:hover {
+    background-color: #166fe5;
+}
+
+@media (max-width: 600px) {
+    .app-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .app-info {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .app-action {
+        margin-top: 15px;
+        align-self: stretch;
+    }
+
+    .download-button, .downloaded-button {
+        width: 100%;
+    }
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
