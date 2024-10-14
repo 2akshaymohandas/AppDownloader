@@ -5,7 +5,7 @@ from django.contrib.auth.models import User
 class AndroidApp(models.Model):
     name = models.CharField(max_length=100)
     category = models.CharField(max_length=100)
-    subCategory = models.CharField(max_length=100)
+    subCategory = models.CharField(max_length=100, null=True)
     url = models.URLField()
     points = models.IntegerField()
 
